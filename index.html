@@ -4,87 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alegra Studio - Transformando el mundo con sostenibilidad</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Estilos Base */
+        :root {
+            --orange: #FF7A00; /* A vibrant orange */
+            --yellow: #FFD700; /* A bright yellow */
+            --pink: #FF1493; /* A deep pink */
+            --purple: #9370DB; /* A soft purple */
+            --white: #FFFFFF; /* White color */
+            --gray: #E0E0E0; /* Light gray for backgrounds */
+        }
+
+        /* Reset and base styles */
         body, html {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
         }
 
+        /* Container for centering content */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* Encabezado */
+        /* Header styles */
         header {
-            background-color: var(--bluish-gray);
-            color: var(--futuristic-white);
+            background-color: var(--gray);
+            color: var(--white);
             padding: 20px 0;
+            text-align: center;
         }
 
+        header img {
+            height: 60px; /* Adjust the size of your logo */
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        /* Navigation styles */
         nav ul {
-            list-style: none;
-            float: right;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline-block;
             margin-left: 20px;
         }
 
         nav ul li a {
-            color: var(--futuristic-white);
+            color: var(--white);
             text-decoration: none;
+            transition: color 0.3s;
         }
 
-        /* Sección Hero */
+        nav ul li a:hover {
+            color: var(--yellow);
+        }
+
+        /* Hero section styles */
         #hero {
-            background-image: url('hero-image.jpg');
-            background-size: cover;
-            background-position: center;
-            color: var(--futuristic-white);
+            background-color: var(--orange);
+            color: var(--white);
             text-align: center;
             padding: 100px 0;
         }
 
-        /* Botones */
+        /* Button styles */
         .btn {
-            display: inline-block;
-            background-color: var(--pastel-orange);
-            color: var(--futuristic-white);
+            background-color: var(--pink);
+            color: var(--white);
             padding: 10px 20px;
+            border: none;
             border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         .btn:hover {
-            background-color: #ffb347;
+            background-color: var(--purple);
         }
 
-        /* Pie de página */
+        /* Footer styles */
         footer {
-            background-color: var(--bluish-gray);
-            color: var(--futuristic-white);
+            background-color: var(--gray);
+            color: var(--white);
             text-align: center;
             padding: 20px 0;
         }
 
-        /* Información al público */
+        /* Public info section styles */
         #public-info {
-            background-color: var(--pastel-purple);
-            color: var(--futuristic-white);
+            background-color: var(--purple);
+            color: var(--white);
             padding: 20px;
             margin-top: 30px;
+        }
+
+        /* Media queries for responsive design */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            #hero {
+                padding: 50px 0;
+            }
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="personal/FOUNDATION.png" alt="Logo de Alegra Studio">
         <nav>
             <div class="container">
                 <h1>Alegra Studio</h1>
