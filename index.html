@@ -24,6 +24,9 @@
 
         /* Container for centering content */
         .container {
+            display: flex;
+            align-items: center; /* Alinea los elementos verticalmente en el centro */
+            justify-content: space-between; /* Espacia los elementos uniformemente */
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
@@ -128,17 +131,18 @@
 </head>
 <body>
     <header>
-        <img src="personal/FOUNDATION.png" alt="Logo de Alegra Studio">
-        <nav>
+        <header>
             <div class="container">
-                <h1>Alegra Studio</h1>
-                <ul>
-                    <li><a href="#about">Sobre nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
+                <img src="personal/FOUNDATION.png" alt="Logo de Alegra Studio" style="max-width: 150px; height: auto;">
+                <nav>
+                    <ul>
+                        <li><a href="#about">Sobre nosotros</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </header>        
     </header>
 
     <section id="hero">
